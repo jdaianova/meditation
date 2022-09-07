@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: sand;
+    src: url('fonts/SAND.TTF');
+}
+
+body {
+    background-color: rgb(236, 236, 208);
+    background-image: url('img/background-big-2.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.main {
+    flex: 3;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme {
+    width: 250px;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.theme:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.theme img {
+    height: 100%;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.theme p {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    font-family: "sand";
+    padding-left: 10px;
+    color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.theme:hover {
+    border-radius: 5px;
+    border: 7px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+}
+
+.right-section img {
+    width: 100px;
+    align-self: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+}
+
+.right-section h1 {
+    text-transform: uppercase;
+    font-family: 'sand';
+    font-size: 50px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding-left: 10px;
+}
