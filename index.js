@@ -17,7 +17,7 @@ startButton.onclick = () => {
         if (sec <= 9) {
             sec = "0" + sec;
         };
-        if (min <= 0) {
+        if (min <= 9) {
             min = "0" + min;
         };
         timer.textContent = `${min} : ${sec}`;
