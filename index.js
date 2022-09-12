@@ -3,10 +3,11 @@ const timer = document.querySelector('.timer');
 
 startButton.onclick = () => {
     const timeOfMeditation = document.querySelector('#input').valueAsNumber;
+    
+    if (timeOfMeditation > 0) {
     document.querySelector('#input').style.display = 'none';
     document.querySelector('.enter-time').style.display = 'none';
-    var countdown = timeOfMeditation * 60;
-    if (timeOfMeditation > 0) {
+    let countdown = timeOfMeditation * 60;
     document.querySelector('.audio').play(); 
     document.querySelector('.video').play();
 
