@@ -6,21 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rain</title>
-    <link rel="stylesheet" href="rain.css">
+    <link rel="stylesheet" href="../subpage_style.css">
+    <link rel="icon" href="data:,">
 </head>
 
 <body>
     <div class="timer-container">
-        <p class="timer">Relax...</p>
+        <h4 class="timer">Relax...</h4>
+        <p class="enter-time">enter your time for meditation</p>
+        <input id="input" type="number" placeholder="minutes">
     </div>
 
-    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+    <video class="video" autoplay="autoplay" loop="loop" muted defaultMuted playsinline>
         <source src="rain.mp4" type="video/mp4">
     </video>
 
-    <audio id="player" autoplay loop>
+    <audio class="audio" loop>
         <source src="rain.mp3" type="audio/mp3">
     </audio>
+    <button id="button">start</button>
 </body>
 <script src="../index.js"></script>
+
 </html>

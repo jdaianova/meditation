@@ -43,6 +43,12 @@ body {
     align-items: center;
 }
 
+.main h1 {
+    font-family: sand;
+    font-size: 20px;;
+    text-transform: uppercase;
+}
+
 .theme {
     width: 250px;
     height: 95px;
